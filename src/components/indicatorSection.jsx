@@ -33,7 +33,7 @@ export default function IndicatorSection({ year, data }) {
 
                 <IndicatorCard
                     title="Median Age"
-                    primary={`${data.median_age}`}
+                    primary={`${data.median_age} years`}
                     details={[
                         `Life expectancy: ${data.life_expectancy_at_birth.average} years`,
                         `Infant mortality: ${data.infant_mortality.average}%`
