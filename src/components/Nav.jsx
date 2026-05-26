@@ -11,10 +11,8 @@ export default function Navbar() {
 
 
         const response = await fetch(
-            `http://localhost:3000/health`);
+            `https://moz-demog-api.vercel.app/health`);
 
-
-        console.log(response)
         const result = await response.json();
         setHealth(result);
     }
