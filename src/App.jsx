@@ -12,13 +12,8 @@ export default function App() {
 
   async function fetchIndicators(year) {
     const response = await fetch(
-      `http://localhost:3000/v1/indicators?y_start=${year}`,
-      {
-        headers: {
-          "x-api-key": "mz2AfGpE5ZpBf9ae1bidpult"
-        }
-      }
-    );
+      `../api/indicators?year=${year}`,
+      );
 
     const result = await response.json();
     setData(result.data[0]);
