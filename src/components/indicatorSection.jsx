@@ -13,10 +13,10 @@ export default function IndicatorSection({ year, data }) {
             <div className="cards">
                 <IndicatorCard
                     title="Population"
-                    primary={`${data.total_population}`}
+                    primary={`${data.total_population} M`}
                     details={[
-                        `Male: ${data.male}`,
-                        `Female: ${data.female}`,
+                        `Male: ${data.male} M`,
+                        `Female: ${data.female} M`,
                         `Sex ratio: ${data.sex_raio}`
                     ]}
                 />
@@ -27,7 +27,7 @@ export default function IndicatorSection({ year, data }) {
                     primary={`${data.urban_percent}%`}
                     details={[
                         `Growth rate: ${data.growth_rate}%`,
-                        `Dependency: ${data.dependency_rate.total}`
+                        `Dependency: ${data.dependency_rate.total} %`
                     ]}
                 />
 
@@ -35,8 +35,8 @@ export default function IndicatorSection({ year, data }) {
                     title="Median Age"
                     primary={`${data.median_age}`}
                     details={[
-                        `Life expectancy: ${data.life_expectancy_at_birth.average}`,
-                        `Infant mortality: ${data.infant_mortality.average}`
+                        `Life expectancy: ${data.life_expectancy_at_birth.average} years`,
+                        `Infant mortality: ${data.infant_mortality.average}%`
                     ]}
                 />
             </div>
